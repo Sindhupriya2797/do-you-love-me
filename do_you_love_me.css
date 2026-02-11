@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   display: grid;
   justify-content: center;
@@ -12,6 +13,7 @@ body {
   background-color: #ffe6e9;
   font-family: "Quicksand", sans-serif;
 }
+
 .container {
   position: absolute;
   top: 50%;
@@ -20,7 +22,7 @@ body {
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-100%, -50%);
+  -moz-transform: translate(-50%, -50%);
   transition: 0.2s;
 }
 
@@ -28,23 +30,32 @@ body {
   position: absolute;
   top: 40%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
   transition: 0.2s;
 }
+
 .tenor-gif-embed {
   height: 15rem;
   pointer-events: none;
   border-radius: 10px;
   margin-bottom: 3rem;
 }
+
 .question {
   font-size: 3.5rem;
   margin-bottom: 1rem;
 }
+
 .button-container {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
 }
+
 .btn {
   position: absolute;
   border: none;
@@ -59,6 +70,7 @@ body {
   transform: scale(1.05);
   box-shadow: 0px 4px 15px rgba(255, 107, 129, 0.5);
 }
+
 .btn:hover {
   background-color: #ffa4b1;
   transform: scale(1.1);
@@ -69,6 +81,7 @@ body {
 .yes-btn {
   right: 54%;
 }
+
 .no-btn {
   left: 54%;
 }
@@ -82,13 +95,16 @@ body {
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-100%, -50%);
+  -moz-transform: translate(-50%, -50%);
   transition: 0.2s;
 }
+
 .gif-result {
   border-radius: 10px;
   margin-bottom: 2rem;
+  animation: floaty 2s ease-in-out infinite;
 }
+
 .result-container h2 {
   font-size: 3.2rem;
   text-align: center;
@@ -102,11 +118,11 @@ body {
   top: 17%;
   left: 50%;
   margin: 200px auto 0 auto;
-  transform: translate(-100%, -50%);
-  -o-transform: translate(-100%, -240%);
-  -ms-transform: translate(-100%, -240%);
-  -webkit-transform: translate(-100%, -240%);
-  -moz-transform: translate(-100%, -240%);
+  transform: translate(-50%, -240%);
+  -o-transform: translate(-50%, -240%);
+  -ms-transform: translate(-50%, -240%);
+  -webkit-transform: translate(-50%, -240%);
+  -moz-transform: translate(-50%, -240%);
 }
 
 .cssload-main * {
@@ -115,14 +131,10 @@ body {
 
 .cssload-heart {
   animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
-  -o-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -ms-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -webkit-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -moz-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
+  -o-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -ms-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -webkit-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -moz-animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
   top: 50%;
   content: "";
   left: 50%;
@@ -139,14 +151,10 @@ body {
   display: block;
   border-radius: 100%;
   animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
-  -o-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -ms-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -webkit-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -moz-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
+  -o-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -ms-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -webkit-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -moz-animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
   transform: translate(-28px, -27px);
   -o-transform: translate(-28px, -27px);
   -ms-transform: translate(-28px, -27px);
@@ -169,14 +177,10 @@ body {
   -webkit-transform: translate(28px, -27px);
   -moz-transform: translate(28px, -27px);
   animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
-  -o-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -ms-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -webkit-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -moz-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
+  -o-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -ms-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -webkit-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -moz-animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
 }
 
 .cssload-square {
@@ -193,14 +197,10 @@ body {
   -webkit-transform: scale(1) rotate(-45deg);
   -moz-transform: scale(1) rotate(-45deg);
   animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
-  -o-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -ms-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -webkit-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -moz-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
+  -o-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -ms-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -webkit-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -moz-animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
 }
 
 .cssload-shadow {
@@ -216,16 +216,13 @@ body {
   border: 1px solid rgb(215, 215, 215);
   border-radius: 50%;
   animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
-  -o-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -ms-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -webkit-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
-  -moz-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite
-    normal;
+  -o-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -ms-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -webkit-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+  -moz-animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
 }
 
+/* Existing keyframes (unchanged) */
 @keyframes cssload-square {
   50% {
     border-radius: 100%;
@@ -415,3 +412,59 @@ body {
     border-color: rgb(228, 228, 228);
   }
 }
+
+/* Result animation */
+.result-container.show {
+  display: block;
+  animation: fadePop 0.8s ease-out forwards;
+}
+
+@keyframes fadePop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* floating animation for result image */
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Gallery styling */
+.love-gallery {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.love-photo {
+  width: 320px;
+  max-width: 90vw;
+  border-radius: 14px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.love-quote {
+  max-width: 360px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  padding: 0 10px;
+}
+
+.love-controls {
+  margin-top: 6px;
+}
+
+.love-next {
+  position: static; /* important because .btn is absolute in your CSS */
+}
+
