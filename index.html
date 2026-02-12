@@ -14,7 +14,6 @@
   </head>
 
   <body>
-    <!-- for more code, visit my tiktok account -->
     <!-- tiktok "meowish" -->
 
     <div class="question-container container">
@@ -24,13 +23,13 @@
         data-share-method="host"
         data-width="100%"
       >
-        <a href="https://tenor.com/view/tkthao219-bubududu-gif-25789758"
-          >Tkthao219 Bubududu Sticker</a
-        >
+        <a href="https://tenor.com/view/tkthao219-bubududu-gif-25789758">
+          Tkthao219 Bubududu Sticker
+        </a>
         from
-        <a href="https://tenor.com/search/tkthao219-stickers"
-          >Tkthao219 Stickers</a
-        >
+        <a href="https://tenor.com/search/tkthao219-stickers">
+          Tkthao219 Stickers
+        </a>
       </div>
 
       <script
@@ -47,18 +46,33 @@
       </div>
     </div>
 
-    <!-- Added "yes" class here -->
+    <!-- Result -->
     <div class="result-container yes container">
-  <video class="gif-result" src="cute love gif.mp4" autoplay loop></video>
-  <h2>I knew it😍!</h2>
+      <video class="gif-result" src="cute love gif.mp4" autoplay loop></video>
+      <h2>I knew it😍!</h2>
 
-  <!-- Quotes + Photos (appears after result) -->
-  <div class="love-gallery">
-    <img class="love-photo" src="" alt="photo" />
-    <p class="love-quote"></p>
+      <!-- Quotes + Photos -->
+      <div class="love-gallery">
+        <img class="love-photo" src="" alt="photo" />
+        <p class="love-quote"></p>
 
-    <div class="love-controls">
-      <button class="btn love-next js-next-btn">Next</button>
+        <div class="love-controls">
+          <button class="btn love-next js-next-btn">Next</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+
+    <!-- Heart loader (this MUST exist because your JS uses it) -->
+    <div class="cssload-main">
+      <div class="cssload-heart">
+        <span class="cssload-heartL"></span>
+        <span class="cssload-heartR"></span>
+        <span class="cssload-square"></span>
+      </div>
+      <div class="cssload-shadow"></div>
+    </div>
+
+    <!-- Your JS MUST be included -->
+    <script src="do_you_love_me.js"></script>
+  </body>
+</html>
